@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAZE</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row given">
+      <div class="col-4">
+        <label for="width" class="label">Width</label>
+        <input class="form-control" type="number" value="2" min="2" max="20" id="width">
+        <label for="height" class="label">Height</label>
+        <input class="form-control" type="number" value="2" min="2" max="20" id="height">
+      </div>
+
+      <div class="col-4">
+        <label for="initialStateX" class="label">Initial State X</label>
+        <input class="form-control" type="number" value="0" min="0" max="19" id="initialStateX">
+        <label for="initialStateY" class="label">Initial State Y</label>
+        <input class="form-control" type="number" value="0" min="0" max="19" id="initialStateY">
+      </div>
+
+      <div class="col-4">
+        <label for="goalStateX" class="label">Goal State X</label>
+        <input class="form-control" type="number" value="1" min="0" max="19" id="goalStateX">
+        <label for="initialStateY" class="label">Goal State Y</label>
+        <input class="form-control" type="number" value="1" min="0" max="19" id="goalStateY">
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row genbtn">
+      <div class="col-6">
+        <button class="form-control btn btn-dark" type="button" id="generate">Generate</button>
+      </div>
+      <div class="col-6">
+        <button class="form-control btn btn-dark" type="button" id="findBath">Find path</button>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row" id="tableRow">
+      <table class="table table-primary table-bordered" id="table">
+        <tr>
+          <td class="bg-success">00</td>
+          <td class="bg-success">10</td>
+        </tr>
+        <tr>
+          <td class="bg-danger">01</td>
+          <td class="bg-success">11</td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+hr{
+  background-color: gray;
+}
+
+
+.given{
+  padding: 20px;
+}
+.given label{
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin: 5px;
+}
+.given input{
+  text-align: center;
+}
+
+.genbtn{
+  padding: 20px;
+}
+
+table{
+  text-align: center;
+}
